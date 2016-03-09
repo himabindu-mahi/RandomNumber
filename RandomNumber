@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+class RandomNumber                               //Class Declaration
+{
+	public void randomNum(int n)
+	{
+		double ran=Math.random();                // Perform some operation for showing random nuber using Math.random()
+		int randomInt=(int)(n*ran);
+		System.out.println("Random Number for the Given Limit is "+randomInt);
+		
+	}
+	
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);     //Takes Input from the keyboard
+		System.out.println("enter the number");
+		int n=sc.nextInt();                    // Entered input should be assigned to n
+		RandomNumber rn=new RandomNumber();    //object creation
+		rn.randomNum(n);                         
+		
+	}
+}
+
+/* Output:--
+
+enter the number
+10
+Random Number for the Given Limit is 9
+
+Output 2:--
+enter the number
+50
+Random Number for the Given Limit is 36
+
+
+*/
